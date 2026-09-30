@@ -3,20 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Семейный retreat 2026</title>
-<meta name="description" content="Семейный retreat 13–15 ноября 2026 в шале Le Couarôge, La Bresse: программа, проживание, что взять с собой.">
+<title>Gym Family Retreat 2026</title>
+<meta name="description" content="Gym Family Retreat 13–15 ноября 2026 в шале Le Couarôge, La Bresse: программа, проживание, что взять с собой.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://solilin.github.io/family-retreat-2026/">
-<meta property="og:title" content="Семейный retreat · 13–15 ноября 2026">
-<meta property="og:description" content="Семейный retreat 13–15 ноября 2026 в шале Le Couarôge, La Bresse: программа, проживание, что взять с собой.">
+<meta property="og:title" content="Gym Family Retreat · 13–15 ноября 2026">
+<meta property="og:description" content="Gym Family Retreat 13–15 ноября 2026 в шале Le Couarôge, La Bresse: программа, проживание, что взять с собой.">
 <meta property="og:image" content="https://solilin.github.io/family-retreat-2026/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Семейный retreat, 13–15 ноября 2026: деревянное шале в осеннем лесу">
+<meta property="og:image:alt" content="Gym Family Retreat, 13–15 ноября 2026: деревянное шале в осеннем лесу">
 <meta property="og:locale" content="ru_RU">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Семейный retreat · 13–15 ноября 2026">
-<meta name="twitter:description" content="Семейный retreat 13–15 ноября 2026 в шале Le Couarôge, La Bresse: программа, проживание, что взять с собой.">
+<meta name="twitter:title" content="Gym Family Retreat · 13–15 ноября 2026">
+<meta name="twitter:description" content="Gym Family Retreat 13–15 ноября 2026 в шале Le Couarôge, La Bresse: программа, проживание, что взять с собой.">
 <meta name="twitter:image" content="https://solilin.github.io/family-retreat-2026/og.jpg">
 <meta name="theme-color" content="#FFFFFF">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -126,6 +126,9 @@
   .units { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 12px; margin-top: 4px; }
   .unit { border: 1px solid var(--rule); padding: 16px; min-width: 0; }
   .unit__n { font-family: var(--font-title); font-weight: 600; font-size: 34px; line-height: 1; letter-spacing: .02em; }
+  .unit--tbd { grid-column: 1 / -1; border-style: dashed; border-color: var(--ink-soft); background: var(--surface-2); }
+  .unit__s { font-size: 13px; color: var(--ink-soft); margin-top: 8px; font-style: italic; }
+  .unit--tbd .unit__s { color: var(--ink); }
   .unit__l { font-family: var(--font-ui); font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-soft); margin-top: 6px; }
   .photo__text { position: relative; padding: 28px 22px; }
   .photo__eyebrow {
@@ -187,6 +190,7 @@
   .facts dd { margin: 0; }
   .facts dd span { display: block; font-size: 14px; color: var(--ink-soft); }
   .facts dl, dl.facts { margin: 0 0 16px; }
+  .h + dl.facts { margin-top: 0; border-top: none; }
 
   /* Timeline */
   .tl { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
@@ -266,7 +270,6 @@
     <a href="#day1">Пятница</a>
     <a href="#day2">Суббота</a>
     <a href="#day3">Воскресенье</a>
-    <a href="#more">Сюрпризы</a>
     <a href="#stay">Шале</a>
     <a href="#costs">Расходы</a>
     <a href="#packing">Сборы</a>
@@ -278,15 +281,13 @@
 <section class="row" id="top">
   <div class="photo p-cover" style="--img:url(img/cover.jpg)">
     <div class="photo__text">
-      <div class="photo__eyebrow">Для наших семей</div>
-      <h1>Семейный retreat</h1>
+      <h1>Gym Family Retreat</h1>
       <div class="photo__meta">13–15 ноября 2026</div>
     </div>
   </div>
   <div class="content">
     <div class="content__inner intro">
-      <p class="intro__quote">Едем вместе: отдыхаем, играем, перезагружаемся</p>
-      <p class="intro__by">Три дня в горах, где взрослые снова играют, а дети засыпают счастливыми</p>
+      <p class="intro__quote" style="margin-bottom:32px;">Едем вместе: отдыхаем, играем, перезагружаемся</p>
       <dl class="glance">
         <div><dt>Даты</dt><dd>13–15 ноября</dd></div>
         <div><dt>Формат</dt><dd>3 дня · 2 ночи</dd></div>
@@ -309,8 +310,7 @@
   </div>
   <div class="content"><div class="content__inner">
     <h3 class="h">Адрес</h3>
-    <p class="tagline">Шале в горах Вогезов, рядом с La Bresse</p>
-    <p class="addr"><b>Le Couarôge Chalets et Appartements</b></p>
+    <p class="addr" style="margin-top:14px;"><b>Le Couarôge Chalets et Appartements</b></p>
     <p class="addr" id="addr-text">83 route de Vologne, 88250 La Bresse, France</p>
     <div class="addr-row">
       <a class="btn btn--solid" href="https://www.google.com/maps/search/?api=1&amp;query=Le+Couar%C3%B4ge+83+route+de+Vologne+88250+La+Bresse" target="_blank" rel="noopener">Google Maps</a>
@@ -337,13 +337,11 @@
   </div>
   <div class="content"><div class="content__inner">
     <h3 class="h">Организационная информация</h3>
-    <p class="tagline">Заезд, выезд и одна просьба</p>
     <dl class="facts">
       <div><dt>Заезд</dt><dd>Пятница, 13 ноября, с 15:00<span>Каждая семья приезжает в удобное время.</span></dd></div>
       <div><dt>Выезд</dt><dd>Воскресенье, 15 ноября, до 10:00<span>На месте попробуем договориться о более позднем выезде.</span></dd></div>
-      <div><dt>Шале</dt><dd>Распределение сообщим позже</dd></div>
+      <div><dt>Шале</dt><dd>Распределение сообщим позже.</dd></div>
     </dl>
-    <p class="small">Заранее подтвердить поздний выезд невозможно: всё зависит от того, будет ли бронирование этого домика на следующий день.</p>
     <div class="note note--warn"><b>Важно:</b> бронирование оформлено на нашу семью, поэтому очень просим бережно относиться к жилью и оборудованию, чтобы нам не пришлось платить лишних 500 евро.</div>
   </div></div>
 </section>
@@ -358,11 +356,11 @@
   </div>
   <div class="content"><div class="content__inner">
     <h3 class="h">День 1: Пятница</h3>
-    <p class="tagline">Заезд, гриль и костёр</p>
+    <p class="tagline">Заезд, гриль и костёр.</p>
     <ul class="tl">
-      <li><span class="tl__time">с 15:00</span><span class="tl__text">Заезд и размещение</span></li>
-      <li><span class="tl__time">с 19:00</span><span class="tl__text">Общий ужин: мангал / гриль, большой общий стол на улице или в доме, в зависимости от погоды</span></li>
-      <li><span class="tl__time">с 22:00</span><span class="tl__text">Костёр и песни под гитару / настольные игры</span></li>
+      <li><span class="tl__time">с 15:00</span><span class="tl__text">Заезд и размещение.</span></li>
+      <li><span class="tl__time">с 19:00</span><span class="tl__text">Общий ужин: мангал / гриль, большой общий стол на улице или в доме, в зависимости от погоды.</span></li>
+      <li><span class="tl__time">с 22:00</span><span class="tl__text">Костёр и песни под гитару / настольные игры.</span></li>
     </ul>
     <figure class="pic"><img src="img/friday-dinner.jpg" alt="Большой общий стол в деревянном шале у камина" loading="lazy"></figure>
   </div></div>
@@ -378,25 +376,25 @@
   </div>
   <div class="content"><div class="content__inner">
     <h3 class="h">День 2: Суббота</h3>
-    <p class="tagline">Зарядка, самовар и большое приключение</p>
+    <p class="tagline">Зарядка, самовар и большое приключение.</p>
     <ul class="tl">
-      <li><span class="tl__time">08:30</span><span class="tl__text">Гимнастическая зарядка от гимнасток для родителей</span></li>
-      <li><span class="tl__time">09:00</span><span class="tl__text">Завтрак, чайная церемония, возможно с самоваром</span></li>
-      <li><span class="tl__time">10:00–11:00</span><span class="tl__text">Небольшая общая прогулка</span></li>
-      <li><span class="tl__time">12:00–13:00</span><span class="tl__text">Обед: свободный формат, по шале или <a href="https://maps.app.goo.gl/i1VGmLCrEwkJFqvi8?g_st=ic" target="_blank" rel="noopener">кафе рядом</a></span></li>
+      <li><span class="tl__time">08:00</span><span class="tl__text">Утренняя зарядка (проводят гимнастки родителям).</span></li>
+      <li><span class="tl__time">09:00</span><span class="tl__text">Совместный завтрак, чайная церемония, возможно с самоваром.</span></li>
+      <li><span class="tl__time">10:00–11:00</span><span class="tl__text">Небольшая общая прогулка.</span></li>
+      <li><span class="tl__time">12:00–13:00</span><span class="tl__text">Обед: свободный формат, по шале или <a href="https://maps.app.goo.gl/i1VGmLCrEwkJFqvi8?g_st=ic" target="_blank" rel="noopener">кафе рядом</a>.</span></li>
       <li><span class="tl__time">14:00–17:00</span><span class="tl__text">Основная активность. Выбираем накануне вечером в зависимости от погоды:
         <ul class="opts">
-          <li><b>Поход к озеру</b></li>
-          <li><b>Luge Schlitte Mountain</b>, санная трасса</li>
-          <li><b>Bol d'Air Aventure</b>, парк с канатными трассами и другими развлечениями</li>
+          <li><b>Поход к озеру</b>.</li>
+          <li><b>Luge Schlitte Mountain</b>, санная трасса.</li>
+          <li><b>Bol d'Air Aventure</b>, парк с канатными трассами и другими развлечениями.</li>
         </ul>
-        <p class="small">В свободное время на территории: бадминтон, настольный теннис, мини-теннис, настольный футбол и, при хорошей погоде, небольшой мастер-класс по теннису для взрослых и детей.</p>
+        <p class="small">В свободное время на территории: бадминтон, настольный теннис, большой теннис, батут, настольный футбол, детская площадка, футбол, фрисби и т.д.</p>
       </span></li>
-      <li><span class="tl__time">19:00–21:00</span><span class="tl__text">Большой общий ужин</span></li>
-      <li><span class="tl__time">21:00–23:00</span><span class="tl__text">Вечерняя программа
+      <li><span class="tl__time">19:00–21:00</span><span class="tl__text">Большой общий ужин.</span></li>
+      <li><span class="tl__time">21:00–23:00</span><span class="tl__text">Вечерняя программа:
         <ul class="opts">
-          <li><b>Для детей:</b> кино, пижамная вечеринка, настольные игры</li>
-          <li><b>Для взрослых:</b> wine / beer / глинтвейн &amp; talk, настольные игры и общение</li>
+          <li><b>Для детей:</b> кино, пижамная вечеринка, настольные игры.</li>
+          <li><b>Для взрослых:</b> уютные посиделки у костра, общение, настольные игры.</li>
         </ul>
       </span></li>
     </ul>
@@ -413,34 +411,14 @@
   </div>
   <div class="content"><div class="content__inner">
     <h3 class="h">День 3: Воскресенье</h3>
-    <p class="tagline">Пробежка, завтрак и дорога домой</p>
+    <p class="tagline">Пробежка, завтрак и дорога домой.</p>
     <ul class="tl">
-      <li><span class="tl__time">08:30</span><span class="tl__text">Зарядка от мам для гимнасток, у мужчин утренняя пробежка</span></li>
-      <li><span class="tl__time">09:00</span><span class="tl__text">Завтрак по шале или общий</span></li>
-      <li><span class="tl__time">до 10:00</span><span class="tl__text">Check-out. Если получится договориться о позднем выезде, решим на месте</span></li>
-      <li><span class="tl__time">После</span><span class="tl__text">Совместная активность из того, что не взяли в субботу, например верёвочный парк. После этого разъезжаемся по домам</span></li>
+      <li><span class="tl__time">08:00</span><span class="tl__text">Утренняя зарядка (проводят мамы гимнасткам), у мужчин утренняя пробежка.</span></li>
+      <li><span class="tl__time">09:00</span><span class="tl__text">Совместный завтрак.</span></li>
+      <li><span class="tl__time">до 10:00</span><span class="tl__text">Check-out. Если получится договориться о позднем выезде, решим на месте.</span></li>
+      <li><span class="tl__time">После</span><span class="tl__text">Совместная активность из того, что не взяли в субботу, например, верёвочный парк. После этого разъезжаемся по домам.</span></li>
     </ul>
     <p class="small" style="margin-top:16px;">Программа может немного меняться в зависимости от погоды и условий на месте.</p>
-  </div></div>
-</section>
-
-<!-- Surprises -->
-<section class="row" id="more">
-  <div class="photo p-surp" style="--img:url(img/hands.jpg)">
-    <div class="photo__text">
-      <div class="photo__eyebrow">А ещё</div>
-      <h2>Что ещё будет</h2>
-    </div>
-  </div>
-  <div class="content"><div class="content__inner">
-    <h3 class="h">Сюрпризы программы</h3>
-    <p class="tagline">Без спойлеров, только названия</p>
-    <ul class="teasers">
-      <li><b>Уроки большого тенниса</b><span>Индивидуальные занятия на корте для желающих</span></li>
-      <li><b>Quiz про нас</b><span>Викторина, где все ответы сидят рядом с вами</span></li>
-      <li><b>Secret Mission</b><span>У каждого будет тайное задание на весь retreat</span></li>
-      <li><b>Campfire Stories</b><span>Истории у костра, по три минуты</span></li>
-    </ul>
     <div class="invite">
       <b>Хотите что-то провести?</b>
       <p>Мастер-класс, игру, тренировку или что-то своё. Напишите нам, мы будем очень-очень рады!</p>
@@ -450,7 +428,7 @@
 
 <!-- Stay -->
 <section class="row" id="stay">
-  <div class="photo p-stay" style="--img:url(img/stay.jpg)">
+  <div class="photo p-stay" style="--img:url(img/chalet-house.jpg)">
     <div class="photo__text">
       <div class="photo__eyebrow">Проживание</div>
       <h2>Шале</h2>
@@ -459,23 +437,23 @@
   <div class="content"><div class="content__inner">
     <div class="block">
       <h3 class="h">Наши шале</h3>
-      <p class="tagline">Два деревянных дома на всю компанию</p>
-      <div class="units">
-        <div class="unit"><div class="unit__n">8</div><div class="unit__l">мест · шале</div></div>
-        <div class="unit"><div class="unit__n">12</div><div class="unit__l">мест · шале</div></div>
+      <div class="units" style="margin-top:14px;">
+        <div class="unit"><div class="unit__n">8</div><div class="unit__l">мест · шале</div><div class="unit__s">Забронировано</div></div>
+        <div class="unit"><div class="unit__n">12</div><div class="unit__l">мест · шале</div><div class="unit__s">Забронировано</div></div>
+        <div class="unit unit--tbd"><div class="unit__n">6 / 8 / 17</div><div class="unit__l">мест · ещё одно шале</div><div class="unit__s">Подберём по финальному числу участников.</div></div>
       </div>
       <p class="small" style="margin-top:12px;">Кто в каком шале, сообщим позже.</p>
     </div>
     <div class="block">
       <h3 class="h">В каждом шале</h3>
-      <p class="tagline">Всё для дома, кухни и вечеров у камина</p>
+      <p class="tagline">Всё для дома, кухни и вечеров у камина.</p>
       <div class="chips">
         <span>Подушки и одеяла</span><span>Кухня</span><span>Холодильник</span><span>Духовка</span><span>Плита</span><span>Микроволновка</span><span>Посудомоечная машина</span><span>Кофемашина</span><span>Чайник</span><span>Тостер</span><span>Посуда и кухонные принадлежности</span><span>Стиральная машина</span><span>Сушилка</span><span>Фен</span><span>Утюг</span><span>Телевизор</span><span>Wi-Fi</span><span>Камин</span><span>Терраса / балкон</span><span>Мебель для отдыха на улице</span><span>Мангал</span>
       </div>
     </div>
     <div class="block">
       <h3 class="h">На территории</h3>
-      <p class="tagline">Спорт и игры для взрослых и детей</p>
+      <p class="tagline">Спорт и игры для взрослых и детей.</p>
       <div class="chips">
         <span>Теннисный корт</span><span>Бадминтон</span><span>Настольный теннис</span><span>Настольный футбол</span><span>Игровая комната</span><span>Батут</span><span>Детская площадка</span><span>Гараж для велосипедов</span><span>Wi-Fi</span>
       </div>
@@ -493,13 +471,13 @@
   </div>
   <div class="content"><div class="content__inner">
     <h3 class="h">Дополнительные расходы</h3>
-    <p class="tagline">Часть услуг необязательна</p>
+    <p class="tagline">Часть услуг необязательна.</p>
     <table class="price">
-      <tr><td>Постельное бельё<span class="tag">по желанию</span><span class="price__hint">Можно не платить, а привезти своё</span></td><td class="price__val">€10 / чел.</td></tr>
-      <tr><td>Полотенца<span class="tag">по желанию</span><span class="price__hint">Можно не платить, а привезти свои</span></td><td class="price__val">€5 / чел.</td></tr>
-      <tr><td>Финальная уборка<span class="tag">по желанию</span><span class="price__hint">Можно убрать шале самостоятельно и не оплачивать</span></td><td class="price__val">€90 / €130 за шале</td></tr>
-      <tr><td>Туристический сбор<span class="price__hint">Для взрослых 18+</span></td><td class="price__val">€1,10 / день</td></tr>
-      <tr><td>Туристический сбор<span class="price__hint">Premium holiday apartment</span></td><td class="price__val">€1,85 / день</td></tr>
+      <tr><td>Постельное бельё<span class="tag">по желанию</span><span class="price__hint">Можно не платить, а привезти своё.</span></td><td class="price__val">€10 / чел.</td></tr>
+      <tr><td>Полотенца<span class="tag">по желанию</span><span class="price__hint">Можно не платить, а привезти свои.</span></td><td class="price__val">€5 / чел.</td></tr>
+      <tr><td>Финальная уборка<span class="tag">по желанию</span><span class="price__hint">Можно убрать шале самостоятельно и не оплачивать.</span></td><td class="price__val">€90 / €130 за шале</td></tr>
+      <tr><td>Туристический сбор<span class="price__hint">Для взрослых 18+.</span></td><td class="price__val">€1,10 / день</td></tr>
+      <tr><td>Туристический сбор<span class="price__hint">Premium holiday apartment.</span></td><td class="price__val">€1,85 / день</td></tr>
       <tr><td>Завтрак<span class="tag">по желанию</span></td><td class="price__val">€10 / чел.</td></tr>
     </table>
   </div></div>
@@ -531,7 +509,7 @@
     </div>
     <div class="block">
       <h3 class="h">На своё шале</h3>
-      <p class="when" style="margin-top:8px;">Скорее всего пригодятся</p>
+      <p class="when" style="margin-top:8px;">Скорее всего пригодятся.</p>
       <ul class="check" data-list="chalet">
         <li>Средство для мытья посуды / мыло</li>
         <li>Таблетки для посудомоечной машины</li>
@@ -555,7 +533,7 @@
   <div class="content"><div class="content__inner">
     <div class="block">
       <h3 class="h">Два ужина на общий стол</h3>
-      <p class="when" style="margin-top:8px;">Пятница и суббота</p>
+      <p class="when" style="margin-top:8px;">Пятница и суббота.</p>
       <ul class="check" data-list="dinner">
         <li>Мясо / сосиски / рыба для гриля</li>
         <li>Овощи</li>
@@ -568,7 +546,7 @@
     </div>
     <div class="block">
       <h3 class="h">Два завтрака</h3>
-      <p class="when" style="margin-top:8px;">Суббота и воскресенье · всё на ваше усмотрение</p>
+      <p class="when" style="margin-top:8px;">Суббота и воскресенье · всё на ваше усмотрение.</p>
       <ul class="check" data-list="breakfast">
         <li>Что-нибудь к чаю / кофе</li>
         <li>Булка / хлеб</li>
@@ -583,7 +561,7 @@
     <div class="block">
       <h3 class="h">Что ещё</h3>
       <ul class="check" data-list="basics" style="margin-top:10px;">
-        <li>Питьевую воду</li>
+        <li>Питьевая вода</li>
         <li>Чай</li>
         <li>Кофе</li>
         <li>Сахар</li>
@@ -597,7 +575,7 @@
     </div>
     <div class="block">
       <h3 class="h">Посуда</h3>
-      <p class="when" style="margin-top:8px;">В шале есть посуда, столовые приборы, кастрюли, сковороды и основная кухонная утварь</p>
+      <p class="when" style="margin-top:8px;">В шале есть посуда, столовые приборы, кастрюли, сковороды и основная кухонная утварь.</p>
       <ul class="check" data-list="dishes">
         <li>Одноразовая посуда (возможно, так удобнее)</li>
         <li>Контейнеры для еды (удобно увозить остатки)</li>
