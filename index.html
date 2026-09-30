@@ -1,0 +1,705 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Семейный retreat 2026</title>
+<meta name="description" content="Семейный retreat 13–15 ноября 2026 в шале Le Couarôge, La Bresse: программа, проживание, что взять с собой.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://solilin.github.io/family-retreat-2026/">
+<meta property="og:title" content="Семейный retreat · 13–15 ноября 2026">
+<meta property="og:description" content="Семейный retreat 13–15 ноября 2026 в шале Le Couarôge, La Bresse: программа, проживание, что взять с собой.">
+<meta property="og:image" content="https://solilin.github.io/family-retreat-2026/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Семейный retreat, 13–15 ноября 2026: деревянное шале в осеннем лесу">
+<meta property="og:locale" content="ru_RU">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Семейный retreat · 13–15 ноября 2026">
+<meta name="twitter:description" content="Семейный retreat 13–15 ноября 2026 в шале Le Couarôge, La Bresse: программа, проживание, что взять с собой.">
+<meta name="twitter:image" content="https://solilin.github.io/family-retreat-2026/og.jpg">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap&subset=cyrillic,latin" rel="stylesheet">
+<style>
+  /* Layout: lookbook split — each section is a row: sticky full-height photo with title overlay on the left, content column on the right; stacks photo-over-content on phones */
+  :root {
+    color-scheme: light;
+    --bg: #FFFFFF;
+    --surface-2: #F6F5F2;
+    --ink: #2F2D31;
+    --ink-soft: #77737B;
+    --rule: #E4E1DC;
+    --accent: #D98A3D;
+    --link: #2F6FB8;
+    --check: #66ADFF;
+    --check-soft: #EAF3FF;
+    --warn-bg: #FBEFE8;
+    --warn: #B4450F;
+    --on-photo: #FFFFFF;
+    --font-title: "Jost", "Futura", "Century Gothic", "Trebuchet MS", sans-serif;
+    --font-body: "Lora", Georgia, "Times New Roman", serif;
+    --font-serif: var(--font-body);
+    --font-ui: "Jost", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --bar-h: 52px;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  :focus-visible { outline: 2px solid var(--check); outline-offset: 2px; }
+
+  /* Top bar (right column on desktop, full width on phones) */
+  .bar {
+    position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20;
+    background: rgba(255,255,255,.94);
+    -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--rule);
+    height: var(--bar-h);
+    display: flex; align-items: center;
+    overflow-x: auto; scrollbar-width: none;
+  }
+  .bar::-webkit-scrollbar { display: none; }
+  .bar__inner { display: flex; gap: 20px; padding-inline: 20px; margin-inline: auto; white-space: nowrap; }
+  .bar a {
+    font-family: var(--font-ui); font-size: 12px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase;
+    color: var(--ink-soft); text-decoration: none; padding-block: 6px;
+  }
+  .bar a:hover { color: var(--ink); }
+  .bar a { position: relative; transition: color .2s ease; }
+  .bar a::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; background: var(--accent); transform: scaleX(0); transition: transform .25s ease; }
+  .bar a.is-active { color: var(--ink); font-weight: 600; }
+  .bar a.is-active::after { transform: scaleX(1); }
+  @media (prefers-reduced-motion: reduce) { .bar a, .bar a::after { transition: none; } }
+  @media (min-width: 900px) {
+    .bar { position: fixed; top: 0; left: 50%; right: 0; padding-top: env(safe-area-inset-top, 0px); height: calc(var(--bar-h) + env(safe-area-inset-top, 0px)); }
+  }
+
+  /* Rows */
+  .row { display: grid; grid-template-columns: 1fr; border-bottom: 1px solid var(--rule); scroll-margin-top: var(--bar-h); }
+  @media (min-width: 900px) { .row { scroll-margin-top: 0; } }
+  .photo {
+    position: relative; min-height: 340px; overflow: hidden;
+    background-color: #5E7FA3;
+    background-image: var(--img, var(--fallback));
+    background-size: cover; background-position: center;
+    color: var(--on-photo);
+  }
+  .photo::before {
+    content: ""; position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(20,24,32,.62) 0%, rgba(20,24,32,.2) 40%, rgba(20,24,32,0) 62%);
+  }
+  .photo h1, .photo h2 { text-shadow: 0 1px 12px rgba(0,0,0,.25); }
+  .p-pack { background-position: center 30%; }
+  .p-cover { background-position: 45% center; }
+
+  /* Inline photos and map */
+  .pic { margin: 20px 0 0; }
+  .pic img { display: block; width: 100%; height: auto; max-width: 100%; }
+  .pic figcaption { font-size: 13px; color: var(--ink-soft); margin-top: 6px; font-family: var(--font-ui); }
+  .pics { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 8px; margin-top: 20px; }
+  .pics img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; max-width: 100%; }
+  .map { position: relative; display: block; border: 1px solid var(--rule); overflow: hidden; }
+  .map img { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; max-width: 100%; }
+  .map small { position: absolute; right: 0; bottom: 0; background: rgba(255,255,255,.85); font-family: var(--font-ui); font-size: 10px; padding: 2px 6px; color: var(--ink); }
+  .addr { font-size: 18px; margin: 0 0 4px; }
+  .addr-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 0; }
+  .btn {
+    font-family: var(--font-ui); font-size: 13px; font-weight: 500; letter-spacing: .04em; text-transform: uppercase;
+    text-decoration: none; color: var(--ink); border: 1px solid var(--ink); padding: 9px 14px; background: var(--bg); cursor: pointer;
+  }
+  .btn:hover { background: var(--ink); color: var(--bg); }
+  .btn--solid { background: var(--ink); color: var(--bg); }
+  .btn--solid:hover { background: var(--accent); border-color: var(--accent); }
+  .units { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 12px; margin-top: 4px; }
+  .unit { border: 1px solid var(--rule); padding: 16px; min-width: 0; }
+  .unit__n { font-family: var(--font-title); font-weight: 600; font-size: 34px; line-height: 1; letter-spacing: .02em; }
+  .unit__l { font-family: var(--font-ui); font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-soft); margin-top: 6px; }
+  .photo__text { position: relative; padding: 28px 22px; }
+  .photo__eyebrow {
+    font-family: var(--font-serif); font-style: italic; font-size: 17px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .photo__eyebrow::before { content: ""; width: 10px; height: 2px; background: var(--accent); }
+  .photo h2, .photo h1 {
+    font-family: var(--font-title); font-weight: 600; text-transform: uppercase;
+    letter-spacing: .04em; line-height: 1.05; margin: 10px 0 0; text-wrap: balance;
+    font-size: clamp(34px, 7vw, 56px);
+  }
+  .photo__meta { font-family: var(--font-serif); font-style: italic; font-size: 17px; margin-top: 12px; }
+  .content { padding: 36px 20px 48px; min-width: 0; }
+  .content__inner { max-width: 470px; margin: 0 auto; }
+
+  @media (min-width: 900px) {
+    .row { grid-template-columns: 1fr 1fr; min-height: 100vh; }
+    .photo { position: sticky; top: 0; height: 100vh; min-height: 0; align-self: start; }
+    .photo__text { padding: 34px 36px; }
+    .content { padding: calc(var(--bar-h) + 56px) 40px 72px; }
+  }
+
+  /* Content typography */
+  .h {
+    font-family: var(--font-title); font-weight: 600; font-size: 21px; letter-spacing: .02em;
+    margin: 0; padding-bottom: 8px; border-bottom: 1px solid var(--rule); text-wrap: balance;
+  }
+  .h + .tagline { margin-top: 8px; }
+  .tagline { font-family: var(--font-serif); font-weight: 400; font-style: italic; font-size: 18px; color: var(--ink); margin: 0 0 16px; }
+  p { margin: 0 0 12px; }
+  .small { font-size: 14px; color: var(--ink-soft); }
+  .block + .block { margin-top: 36px; }
+  .label {
+    font-family: var(--font-ui); font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+    color: var(--ink-soft); margin: 0 0 10px;
+  }
+
+  .note { font-size: 15px; background: var(--surface-2); padding: 14px 16px; margin-top: 16px; border-left: 2px solid var(--accent); }
+  .note--warn { background: var(--warn-bg); border-left-color: var(--warn); }
+  .note--warn b { color: var(--warn); }
+
+  /* Cover right side */
+  .intro { display: flex; flex-direction: column; justify-content: center; min-height: 100%; text-align: center; }
+  .intro__quote { font-family: var(--font-title); font-weight: 600; letter-spacing: .04em; text-transform: uppercase; font-size: 24px; line-height: 1.2; margin: 0 0 10px; text-wrap: balance; }
+  .intro__by { font-family: var(--font-serif); font-weight: 400; font-style: italic; color: var(--ink-soft); font-size: 16px; margin: 0 0 32px; }
+  .glance { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--rule); text-align: left; }
+  .glance div { padding: 14px 4px; border-bottom: 1px solid var(--rule); min-width: 0; }
+  .glance div:nth-child(odd) { padding-right: 12px; }
+  .glance dt { font-family: var(--font-ui); font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-soft); }
+  .glance dd { margin: 2px 0 0; font-size: 16px; font-variant-numeric: tabular-nums; }
+  .glance dl { margin: 0; display: contents; }
+  .down { display: block; margin: 32px auto 0; color: var(--ink-soft); font-size: 22px; text-decoration: none; }
+
+  /* Key facts */
+  .facts { display: grid; gap: 0; border-top: 1px solid var(--rule); margin-bottom: 16px; }
+  .facts > div { display: grid; grid-template-columns: 90px minmax(0, 1fr); gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--rule); }
+  .facts dt { font-family: var(--font-ui); font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-soft); padding-top: 4px; }
+  .facts dd { margin: 0; }
+  .facts dd span { display: block; font-size: 14px; color: var(--ink-soft); }
+  .facts dl, dl.facts { margin: 0 0 16px; }
+
+  /* Timeline */
+  .tl { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
+  .tl > li { display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--rule); }
+  .tl__time { font-family: var(--font-ui); font-size: 13px; font-weight: 600; color: var(--ink); padding-top: 3px; font-variant-numeric: tabular-nums; }
+  .tl__text { min-width: 0; }
+  .opts { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 6px; }
+  .opts li { background: var(--surface-2); padding: 8px 12px; font-size: 15px; }
+  .opts b { font-weight: 600; }
+  .tl .small { margin: 8px 0 0; }
+  @media (max-width: 400px) { .tl > li { grid-template-columns: 1fr; gap: 0; } }
+
+  /* Amenities */
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chips span { font-family: var(--font-ui); font-size: 13px; padding: 5px 11px; border: 1px solid var(--rule); border-radius: 999px; background: var(--bg); }
+
+  /* Price */
+  .price { width: 100%; border-collapse: collapse; border-top: 1px solid var(--rule); }
+  .price td { padding: 12px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  .price__hint { display: block; font-size: 14px; color: var(--ink-soft); }
+  .price__val { text-align: right; white-space: nowrap; padding-left: 12px; font-family: var(--font-ui); font-size: 14px; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .tag { font-family: var(--font-ui); font-size: 10px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); margin-left: 6px; vertical-align: 2px; }
+
+  /* Checklists */
+  .check-hint { font-family: var(--font-serif); font-weight: 500; font-size: 15px; color: var(--ink-soft); font-style: italic; margin: 0 0 20px; }
+  .check { list-style: none; margin: 0; padding: 0; }
+  .check label { display: flex; align-items: flex-start; gap: 12px; cursor: pointer; padding: 6px 0; font-size: 16px; }
+  .check input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+  .check .box {
+    flex: 0 0 auto; width: 18px; height: 18px; margin-top: 3px; border-radius: 5px;
+    border: 1.5px solid var(--check); background: var(--check-soft);
+    display: grid; place-items: center;
+  }
+  .check .box::after { content: ""; width: 9px; height: 5px; border-left: 2px solid #fff; border-bottom: 2px solid #fff; transform: rotate(-45deg) translate(1px, -1px); opacity: 0; }
+  .check input:checked + .box { background: var(--check); }
+  .check input:checked + .box::after { opacity: 1; }
+  .check input:checked ~ .txt { color: var(--ink-soft); text-decoration: line-through; }
+  .check input:focus-visible + .box { outline: 2px solid var(--check); outline-offset: 2px; }
+  .when { font-family: var(--font-serif); font-weight: 400; font-style: italic; color: var(--ink-soft); font-size: 15px; margin: -4px 0 8px; }
+
+  /* Teasers */
+  .teasers { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
+  .teasers li { padding: 14px 0; border-bottom: 1px solid var(--rule); }
+  .teasers b { display: block; font-family: var(--font-title); font-weight: 600; font-size: 17px; letter-spacing: .06em; text-transform: uppercase; }
+  .teasers span { display: block; font-style: italic; color: var(--ink-soft); font-size: 15px; margin-top: 2px; }
+  .invite { margin-top: 28px; padding: 20px; background: var(--surface-2); border-left: 2px solid var(--accent); }
+  .invite b { display: block; font-family: var(--font-title); font-weight: 600; font-size: 17px; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 6px; }
+  .invite p { margin: 0; }
+  .p-surp  { --fallback: linear-gradient(170deg, #BFD9C4 0%, #5F9270 45%, #264634 100%); background-position: 50% 45%; }
+  .p-fin   { --fallback: linear-gradient(170deg, #2E4F74 0%, #1B2940 100%); background-position: 60% center; }
+  .finale { display: flex; flex-direction: column; justify-content: center; min-height: 100%; text-align: center; }
+  .finale .intro__quote { font-size: 22px; }
+  .finale .small { margin-top: 20px; font-size: 12px; font-family: var(--font-ui); }
+
+  footer { text-align: center; padding: 48px 20px 56px; color: var(--ink-soft); }
+  footer .sign { display: block; font-family: var(--font-title); font-weight: 600; letter-spacing: .04em; text-transform: uppercase; font-size: 22px; color: var(--ink); margin-bottom: 4px; }
+
+  /* Photo placeholders until real photos are added (swap via --img on each .photo) */
+  .p-cover  { --fallback: linear-gradient(170deg, #9FC3EA 0%, #5E8FC4 45%, #2E4F74 100%); }
+  .p-info   { --fallback: linear-gradient(170deg, #C9B79B 0%, #8C7358 50%, #4A3B2E 100%); }
+  .p-fri    { --fallback: linear-gradient(170deg, #F0A36A 0%, #B45B3A 45%, #3B2530 100%); }
+  .p-sat    { --fallback: linear-gradient(170deg, #BFD9C4 0%, #5F9270 45%, #264634 100%); }
+  .p-sun    { --fallback: linear-gradient(170deg, #D8E6F4 0%, #8FB3D6 45%, #45678C 100%); }
+  .p-stay   { --fallback: linear-gradient(170deg, #D9C3A6 0%, #9C7A55 45%, #3F3024 100%); }
+  .p-costs  { --fallback: linear-gradient(170deg, #C7CCD6 0%, #7D8798 45%, #394252 100%); }
+  .p-pack   { --fallback: linear-gradient(170deg, #CFD8C0 0%, #7F9467 45%, #36432A 100%); }
+  .p-where  { --fallback: linear-gradient(170deg, #BFD9C4 0%, #5F9270 45%, #264634 100%); }
+  .p-food   { --fallback: linear-gradient(170deg, #E9C39A 0%, #B47544 45%, #4A2A1C 100%); }
+</style>
+
+</head>
+<body>
+<nav class="bar" aria-label="Разделы">
+  <div class="bar__inner">
+    <a href="#where">Адрес</a>
+    <a href="#info">Важно</a>
+    <a href="#day1">Пятница</a>
+    <a href="#day2">Суббота</a>
+    <a href="#day3">Воскресенье</a>
+    <a href="#more">Сюрпризы</a>
+    <a href="#stay">Шале</a>
+    <a href="#costs">Расходы</a>
+    <a href="#packing">Сборы</a>
+    <a href="#food">Еда</a>
+  </div>
+</nav>
+
+<!-- Cover -->
+<section class="row" id="top">
+  <div class="photo p-cover" style="--img:url(img/cover.jpg)">
+    <div class="photo__text">
+      <div class="photo__eyebrow">Для наших семей</div>
+      <h1>Семейный retreat</h1>
+      <div class="photo__meta">13–15 ноября 2026</div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="content__inner intro">
+      <p class="intro__quote">Едем вместе: отдыхаем, играем, перезагружаемся</p>
+      <p class="intro__by">Три дня в горах, где взрослые снова играют, а дети засыпают счастливыми</p>
+      <dl class="glance">
+        <div><dt>Даты</dt><dd>13–15 ноября</dd></div>
+        <div><dt>Формат</dt><dd>3 дня · 2 ночи</dd></div>
+        <div><dt>Заезд</dt><dd>Пт, с 15:00</dd></div>
+        <div><dt>Выезд</dt><dd>Вс, до 10:00</dd></div>
+      </dl>
+      <a class="down" href="#where" aria-label="Листать дальше">↓</a>
+    </div>
+  </div>
+</section>
+
+<!-- Location -->
+<section class="row" id="where">
+  <div class="photo p-where" style="--img:url(img/location.jpg)">
+    <div class="photo__text">
+      <div class="photo__eyebrow">Куда едем</div>
+      <h2>Le Couarôge</h2>
+      <div class="photo__meta">La Bresse, Вогезы, Франция</div>
+    </div>
+  </div>
+  <div class="content"><div class="content__inner">
+    <h3 class="h">Адрес</h3>
+    <p class="tagline">Шале в горах Вогезов, рядом с La Bresse</p>
+    <p class="addr"><b>Le Couarôge Chalets et Appartements</b></p>
+    <p class="addr" id="addr-text">83 route de Vologne, 88250 La Bresse, France</p>
+    <div class="addr-row">
+      <a class="btn btn--solid" href="https://www.google.com/maps/search/?api=1&amp;query=Le+Couar%C3%B4ge+83+route+de+Vologne+88250+La+Bresse" target="_blank" rel="noopener">Google Maps</a>
+      <a class="btn" href="https://waze.com/ul?ll=48.0216742,6.9515224&amp;navigate=yes" target="_blank" rel="noopener">Waze</a>
+      <button class="btn" type="button" id="copy-addr">Скопировать адрес</button>
+    </div>
+    <figure class="pic">
+      <a class="map" href="https://www.openstreetmap.org/?mlat=48.02167&amp;mlon=6.95152#map=13/48.02167/6.95152" target="_blank" rel="noopener" aria-label="Открыть карту">
+        <img src="img/map.jpg" alt="Карта: Le Couarôge у деревни Le Régit, к северо-востоку от La Bresse" loading="lazy">
+        <small>© OpenStreetMap contributors</small>
+      </a>
+      <figcaption>Шале стоят у местечка Le Régit, в нескольких минутах езды от центра La Bresse.</figcaption>
+    </figure>
+  </div></div>
+</section>
+
+<!-- Info -->
+<section class="row" id="info">
+  <div class="photo p-info" style="--img:url(img/info.jpg)">
+    <div class="photo__text">
+      <div class="photo__eyebrow">Перед поездкой</div>
+      <h2>Важно знать</h2>
+    </div>
+  </div>
+  <div class="content"><div class="content__inner">
+    <h3 class="h">Организационная информация</h3>
+    <p class="tagline">Заезд, выезд и одна просьба</p>
+    <dl class="facts">
+      <div><dt>Заезд</dt><dd>Пятница, 13 ноября, с 15:00<span>Каждая семья приезжает в удобное время.</span></dd></div>
+      <div><dt>Выезд</dt><dd>Воскресенье, 15 ноября, до 10:00<span>На месте попробуем договориться о более позднем выезде.</span></dd></div>
+      <div><dt>Шале</dt><dd>Распределение сообщим позже</dd></div>
+    </dl>
+    <p class="small">Заранее подтвердить поздний выезд невозможно: всё зависит от того, будет ли бронирование этого домика на следующий день.</p>
+    <div class="note note--warn"><b>Важно:</b> бронирование оформлено на нашу семью, поэтому очень просим бережно относиться к жилью и оборудованию, чтобы нам не пришлось платить лишних 500 евро.</div>
+  </div></div>
+</section>
+
+<!-- Day 1 -->
+<section class="row" id="day1">
+  <div class="photo p-fri" style="--img:url(img/friday.jpg)">
+    <div class="photo__text">
+      <div class="photo__eyebrow">День 1 · 13 ноября</div>
+      <h2>Пятница</h2>
+    </div>
+  </div>
+  <div class="content"><div class="content__inner">
+    <h3 class="h">День 1: Пятница</h3>
+    <p class="tagline">Заезд, гриль и костёр</p>
+    <ul class="tl">
+      <li><span class="tl__time">с 15:00</span><span class="tl__text">Заезд и размещение</span></li>
+      <li><span class="tl__time">с 19:00</span><span class="tl__text">Общий ужин: мангал / гриль, большой общий стол на улице или в доме, в зависимости от погоды</span></li>
+      <li><span class="tl__time">с 22:00</span><span class="tl__text">Костёр и песни под гитару / настольные игры</span></li>
+    </ul>
+    <figure class="pic"><img src="img/friday-dinner.jpg" alt="Большой общий стол в деревянном шале у камина" loading="lazy"></figure>
+  </div></div>
+</section>
+
+<!-- Day 2 -->
+<section class="row" id="day2">
+  <div class="photo p-sat" style="--img:url(img/saturday.jpg)">
+    <div class="photo__text">
+      <div class="photo__eyebrow">День 2 · 14 ноября</div>
+      <h2>Суббота</h2>
+    </div>
+  </div>
+  <div class="content"><div class="content__inner">
+    <h3 class="h">День 2: Суббота</h3>
+    <p class="tagline">Зарядка, самовар и большое приключение</p>
+    <ul class="tl">
+      <li><span class="tl__time">08:30</span><span class="tl__text">Гимнастическая зарядка от гимнасток для родителей</span></li>
+      <li><span class="tl__time">09:00</span><span class="tl__text">Завтрак, чайная церемония, возможно с самоваром</span></li>
+      <li><span class="tl__time">10:00–11:00</span><span class="tl__text">Небольшая общая прогулка</span></li>
+      <li><span class="tl__time">12:00–13:00</span><span class="tl__text">Обед: свободный формат, по шале или <a href="https://maps.app.goo.gl/i1VGmLCrEwkJFqvi8?g_st=ic" target="_blank" rel="noopener">кафе рядом</a></span></li>
+      <li><span class="tl__time">14:00–17:00</span><span class="tl__text">Основная активность. Выбираем накануне вечером в зависимости от погоды:
+        <ul class="opts">
+          <li><b>Поход к озеру</b></li>
+          <li><b>Luge Schlitte Mountain</b>, санная трасса</li>
+          <li><b>Bol d'Air Aventure</b>, парк с канатными трассами и другими развлечениями</li>
+        </ul>
+        <p class="small">В свободное время на территории: бадминтон, настольный теннис, мини-теннис, настольный футбол и, при хорошей погоде, небольшой мастер-класс по теннису для взрослых и детей.</p>
+      </span></li>
+      <li><span class="tl__time">19:00–21:00</span><span class="tl__text">Большой общий ужин</span></li>
+      <li><span class="tl__time">21:00–23:00</span><span class="tl__text">Вечерняя программа
+        <ul class="opts">
+          <li><b>Для детей:</b> кино, пижамная вечеринка, настольные игры</li>
+          <li><b>Для взрослых:</b> wine / beer / глинтвейн &amp; talk, настольные игры и общение</li>
+        </ul>
+      </span></li>
+    </ul>
+  </div></div>
+</section>
+
+<!-- Day 3 -->
+<section class="row" id="day3">
+  <div class="photo p-sun" style="--img:url(img/yoga.jpg)">
+    <div class="photo__text">
+      <div class="photo__eyebrow">День 3 · 15 ноября</div>
+      <h2>Воскресенье</h2>
+    </div>
+  </div>
+  <div class="content"><div class="content__inner">
+    <h3 class="h">День 3: Воскресенье</h3>
+    <p class="tagline">Пробежка, завтрак и дорога домой</p>
+    <ul class="tl">
+      <li><span class="tl__time">08:30</span><span class="tl__text">Зарядка от мам для гимнасток, у мужчин утренняя пробежка</span></li>
+      <li><span class="tl__time">09:00</span><span class="tl__text">Завтрак по шале или общий</span></li>
+      <li><span class="tl__time">до 10:00</span><span class="tl__text">Check-out. Если получится договориться о позднем выезде, решим на месте</span></li>
+      <li><span class="tl__time">После</span><span class="tl__text">Совместная активность из того, что не взяли в субботу, например верёвочный парк. После этого разъезжаемся по домам</span></li>
+    </ul>
+    <p class="small" style="margin-top:16px;">Программа может немного меняться в зависимости от погоды и условий на месте.</p>
+  </div></div>
+</section>
+
+<!-- Surprises -->
+<section class="row" id="more">
+  <div class="photo p-surp" style="--img:url(img/hands.jpg)">
+    <div class="photo__text">
+      <div class="photo__eyebrow">А ещё</div>
+      <h2>Что ещё будет</h2>
+    </div>
+  </div>
+  <div class="content"><div class="content__inner">
+    <h3 class="h">Сюрпризы программы</h3>
+    <p class="tagline">Без спойлеров, только названия</p>
+    <ul class="teasers">
+      <li><b>Уроки большого тенниса</b><span>Индивидуальные занятия на корте для желающих</span></li>
+      <li><b>Quiz про нас</b><span>Викторина, где все ответы сидят рядом с вами</span></li>
+      <li><b>Secret Mission</b><span>У каждого будет тайное задание на весь retreat</span></li>
+      <li><b>Campfire Stories</b><span>Истории у костра, по три минуты</span></li>
+    </ul>
+    <div class="invite">
+      <b>Хотите что-то провести?</b>
+      <p>Мастер-класс, игру, тренировку или что-то своё. Напишите нам, мы будем очень-очень рады!</p>
+    </div>
+  </div></div>
+</section>
+
+<!-- Stay -->
+<section class="row" id="stay">
+  <div class="photo p-stay" style="--img:url(img/stay.jpg)">
+    <div class="photo__text">
+      <div class="photo__eyebrow">Проживание</div>
+      <h2>Шале</h2>
+    </div>
+  </div>
+  <div class="content"><div class="content__inner">
+    <div class="block">
+      <h3 class="h">Наши шале</h3>
+      <p class="tagline">Два деревянных дома на всю компанию</p>
+      <div class="units">
+        <div class="unit"><div class="unit__n">8</div><div class="unit__l">мест · шале</div></div>
+        <div class="unit"><div class="unit__n">12</div><div class="unit__l">мест · шале</div></div>
+      </div>
+      <p class="small" style="margin-top:12px;">Кто в каком шале, сообщим позже.</p>
+    </div>
+    <div class="block">
+      <h3 class="h">В каждом шале</h3>
+      <p class="tagline">Всё для дома, кухни и вечеров у камина</p>
+      <div class="chips">
+        <span>Подушки и одеяла</span><span>Кухня</span><span>Холодильник</span><span>Духовка</span><span>Плита</span><span>Микроволновка</span><span>Посудомоечная машина</span><span>Кофемашина</span><span>Чайник</span><span>Тостер</span><span>Посуда и кухонные принадлежности</span><span>Стиральная машина</span><span>Сушилка</span><span>Фен</span><span>Утюг</span><span>Телевизор</span><span>Wi-Fi</span><span>Камин</span><span>Терраса / балкон</span><span>Мебель для отдыха на улице</span><span>Мангал</span>
+      </div>
+    </div>
+    <div class="block">
+      <h3 class="h">На территории</h3>
+      <p class="tagline">Спорт и игры для взрослых и детей</p>
+      <div class="chips">
+        <span>Теннисный корт</span><span>Бадминтон</span><span>Настольный теннис</span><span>Настольный футбол</span><span>Игровая комната</span><span>Батут</span><span>Детская площадка</span><span>Гараж для велосипедов</span><span>Wi-Fi</span>
+      </div>
+    </div>
+  </div></div>
+</section>
+
+<!-- Costs -->
+<section class="row" id="costs">
+  <div class="photo p-costs" style="--img:url(img/stay-bed.jpg)">
+    <div class="photo__text">
+      <div class="photo__eyebrow">На месте</div>
+      <h2>Расходы</h2>
+    </div>
+  </div>
+  <div class="content"><div class="content__inner">
+    <h3 class="h">Дополнительные расходы</h3>
+    <p class="tagline">Часть услуг необязательна</p>
+    <table class="price">
+      <tr><td>Постельное бельё<span class="tag">по желанию</span><span class="price__hint">Можно не платить, а привезти своё</span></td><td class="price__val">€10 / чел.</td></tr>
+      <tr><td>Полотенца<span class="tag">по желанию</span><span class="price__hint">Можно не платить, а привезти свои</span></td><td class="price__val">€5 / чел.</td></tr>
+      <tr><td>Финальная уборка<span class="tag">по желанию</span><span class="price__hint">Можно убрать шале самостоятельно и не оплачивать</span></td><td class="price__val">€90 / €130 за шале</td></tr>
+      <tr><td>Туристический сбор<span class="price__hint">Для взрослых 18+</span></td><td class="price__val">€1,10 / день</td></tr>
+      <tr><td>Туристический сбор<span class="price__hint">Premium holiday apartment</span></td><td class="price__val">€1,85 / день</td></tr>
+      <tr><td>Завтрак<span class="tag">по желанию</span></td><td class="price__val">€10 / чел.</td></tr>
+    </table>
+  </div></div>
+</section>
+
+<!-- Packing -->
+<section class="row" id="packing">
+  <div class="photo p-pack" style="--img:url(img/packing.jpg)">
+    <div class="photo__text">
+      <div class="photo__eyebrow">Сборы</div>
+      <h2>Что взять с собой</h2>
+    </div>
+  </div>
+  <div class="content"><div class="content__inner">
+    <p class="check-hint">Отмечайте пункты по мере сборов: отметки видны только вам, на этом устройстве.</p>
+    <div class="block">
+      <h3 class="h">Каждому</h3>
+      <ul class="check" data-list="each" style="margin-top:10px;">
+        <li>Постельное бельё / спальник (если не будете оплачивать)</li>
+        <li>Полотенце (если не будете оплачивать)</li>
+        <li>Тёплую одежду и обувь</li>
+        <li>Спортивную одежду и обувь</li>
+        <li>Обувь для дома</li>
+        <li>Йога-коврик</li>
+        <li>Мячики, настолки, прочие развлечения</li>
+        <li>Фонарик / гирлянды для атмосферы</li>
+        <li>Плед на вечер к костру</li>
+      </ul>
+    </div>
+    <div class="block">
+      <h3 class="h">На своё шале</h3>
+      <p class="when" style="margin-top:8px;">Скорее всего пригодятся</p>
+      <ul class="check" data-list="chalet">
+        <li>Средство для мытья посуды / мыло</li>
+        <li>Таблетки для посудомоечной машины</li>
+        <li>Губки</li>
+        <li>Кухонные полотенца</li>
+        <li>Мусорные пакеты</li>
+        <li>Бумажные полотенца и салфетки</li>
+      </ul>
+    </div>
+  </div></div>
+</section>
+
+<!-- Food -->
+<section class="row" id="food">
+  <div class="photo p-food" style="--img:url(img/grill.jpg)">
+    <div class="photo__text">
+      <div class="photo__eyebrow">От каждой семьи</div>
+      <h2>Еда и посуда</h2>
+    </div>
+  </div>
+  <div class="content"><div class="content__inner">
+    <div class="block">
+      <h3 class="h">Два ужина на общий стол</h3>
+      <p class="when" style="margin-top:8px;">Пятница и суббота</p>
+      <ul class="check" data-list="dinner">
+        <li>Мясо / сосиски / рыба для гриля</li>
+        <li>Овощи</li>
+        <li>Фрукты</li>
+        <li>Хлеб / лаваш</li>
+        <li>Соусы</li>
+        <li>Напитки</li>
+        <li>Что-нибудь ещё к общему столу по желанию</li>
+      </ul>
+    </div>
+    <div class="block">
+      <h3 class="h">Два завтрака</h3>
+      <p class="when" style="margin-top:8px;">Суббота и воскресенье · всё на ваше усмотрение</p>
+      <ul class="check" data-list="breakfast">
+        <li>Что-нибудь к чаю / кофе</li>
+        <li>Булка / хлеб</li>
+        <li>Пирог</li>
+        <li>Сыр / колбаса</li>
+        <li>Масло</li>
+        <li>Яйца</li>
+        <li>Йогурты</li>
+        <li>Фрукты и т.д.</li>
+      </ul>
+    </div>
+    <div class="block">
+      <h3 class="h">Что ещё</h3>
+      <ul class="check" data-list="basics" style="margin-top:10px;">
+        <li>Питьевую воду</li>
+        <li>Чай</li>
+        <li>Кофе</li>
+        <li>Сахар</li>
+        <li>Соль</li>
+        <li>Перец и другие приправы, если надо</li>
+      </ul>
+    </div>
+    <div class="block">
+      <h3 class="h">Обед в субботу</h3>
+      <p style="margin-top:10px;">Планируем либо пойти в кафе, либо организовать обед самостоятельно в шале. Если выбираем второй вариант, продукты для обеда каждый берёт с собой.</p>
+    </div>
+    <div class="block">
+      <h3 class="h">Посуда</h3>
+      <p class="when" style="margin-top:8px;">В шале есть посуда, столовые приборы, кастрюли, сковороды и основная кухонная утварь</p>
+      <ul class="check" data-list="dishes">
+        <li>Одноразовая посуда (возможно, так удобнее)</li>
+        <li>Контейнеры для еды (удобно увозить остатки)</li>
+        <li>Термосы</li>
+        <li>Свои питьевые бутылки</li>
+        <li>Любимая кружка / термокружка</li>
+      </ul>
+    </div>
+  </div></div>
+</section>
+
+<section class="row" id="bye">
+  <div class="photo p-fin" style="--img:url(img/finale.jpg)">
+    <div class="photo__text">
+      <div class="photo__eyebrow">13–15 ноября 2026</div>
+      <h2>До встречи на retreat!</h2>
+    </div>
+  </div>
+  <div class="content"><div class="content__inner finale">
+    <p class="intro__quote">Отдыхаем, играем, перезагружаемся</p>
+    <p class="intro__by">Le Couarôge, 83 route de Vologne, 88250 La Bresse</p>
+    <div class="addr-row" style="justify-content:center;">
+      <a class="btn btn--solid" href="#where">Адрес и карта</a>
+      <a class="btn" href="#top">К началу</a>
+    </div>
+    <p class="small">Фото: Le Couarôge, Unsplash · Карта: © OpenStreetMap contributors</p>
+  </div></div>
+</section>
+
+<script>
+  (function () {
+    var btn = document.getElementById("copy-addr");
+    btn.addEventListener("click", function () {
+      var text = document.getElementById("addr-text").textContent;
+      var done = function () { btn.textContent = "Адрес скопирован"; setTimeout(function () { btn.textContent = "Скопировать адрес"; }, 2000); };
+      var fallback = function () { var r = document.createRange(); r.selectNodeContents(document.getElementById("addr-text")); var sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); btn.textContent = "Выделено, нажмите копировать"; };
+      try { navigator.clipboard.writeText(text).then(done, fallback); } catch (e) { fallback(); }
+    });
+  })();
+  (function () {
+    var KEY = "retreat2026-checks";
+    var saved = {};
+    try { saved = JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch (e) { saved = {}; }
+    document.querySelectorAll(".check").forEach(function (list) {
+      var name = list.getAttribute("data-list");
+      list.querySelectorAll("li").forEach(function (li, i) {
+        var id = "c-" + name + "-" + i;
+        var text = li.textContent;
+        li.textContent = "";
+        var label = document.createElement("label");
+        label.setAttribute("for", id);
+        var input = document.createElement("input");
+        input.type = "checkbox"; input.id = id; input.checked = !!saved[id];
+        var box = document.createElement("span"); box.className = "box";
+        var txt = document.createElement("span"); txt.className = "txt"; txt.textContent = text;
+        label.append(input, box, txt);
+        li.appendChild(label);
+        input.addEventListener("change", function () {
+          saved[id] = input.checked;
+          try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch (e) {}
+        });
+      });
+    });
+  })();
+</script>
+<script>
+  (function () {
+    var links = Array.prototype.slice.call(document.querySelectorAll('.bar a[href^="#"]'));
+    var bar = document.querySelector('.bar');
+    var map = {};
+    links.forEach(function (a) { map[a.getAttribute('href').slice(1)] = a; });
+    var sections = Object.keys(map).map(function (id) { return document.getElementById(id); }).filter(Boolean);
+    var current = null;
+    function setActive(id) {
+      if (id === current) return;
+      current = id;
+      links.forEach(function (a) { a.classList.remove('is-active'); a.removeAttribute('aria-current'); });
+      var a = map[id];
+      if (!a) return;
+      a.classList.add('is-active');
+      a.setAttribute('aria-current', 'true');
+      var left = a.offsetLeft - (bar.clientWidth - a.offsetWidth) / 2;
+      bar.scrollTo({ left: Math.max(0, left), behavior: 'smooth' });
+    }
+    function update() {
+      var line = window.innerHeight * 0.35;
+      var active = null;
+      for (var i = 0; i < sections.length; i++) {
+        if (sections[i].getBoundingClientRect().top <= line) active = sections[i].id;
+      }
+      var bye = document.getElementById('bye');
+      if (bye && bye.getBoundingClientRect().top <= line) active = null;
+      if (active === null) { current = null; links.forEach(function (a) { a.classList.remove('is-active'); a.removeAttribute('aria-current'); }); return; }
+      setActive(active);
+    }
+    var ticking = false;
+    window.addEventListener('scroll', function () {
+      if (!ticking) { ticking = true; requestAnimationFrame(function () { ticking = false; update(); }); }
+    }, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  })();
+</script>
+</body>
+</html>
